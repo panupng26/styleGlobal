@@ -1,0 +1,810 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1300px
+);
+
+/*$container-max-widths: (
+  sm: 440px,
+  md: 576px,
+  lg: 720px,
+  xl: 768px,
+  xxl: 992px
+);*/
+
+$theme-colors: (
+  "primary": #b6333a,
+  "secondary": #e1e1e1,
+  // "danger": #ff4136
+);
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap";
+
+.noto-family {
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+.border {
+  border-color: #e3e3e3;
+}
+
+.fw-bold {
+  font-weight: 900;
+}
+// therm use often
+.border-danger{
+  border-style: solid;
+  border-color: red;
+}
+.border-blue{
+  border-style: solid;
+  border-color: blue;
+}
+.border-green{
+  border-style: solid;
+  border-color: green;
+}
+.text-underline {
+  text-decoration: underline;
+}
+// fix for panupong (BANK)
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .review {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: none;
+    }
+    .mobile-show {
+      display: block;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .blog {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: none;
+    }
+    .mobile-show {
+      display: block;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .flex-fix {
+    flex-direction: column !important;
+  }
+  .payment-font {
+    h3 {
+      font-size: 1.5rem !important;
+    }
+    h5 {
+      font-size: 1.1rem !important;
+    }
+    p {
+      font-size: 0.95rem !important;
+    }
+  }
+  .course-detail-payment {
+    margin: 2rem 0px;
+    .payment-1 {
+      margin: 0px 1rem;
+    }
+    .payment-2 {
+      margin: 0px 1rem;
+    }
+    .payment-3 {
+      margin: 0px 1rem;
+    }
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .review {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: none;
+    }
+    .mobile-show {
+      display: block;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .blog {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: none;
+    }
+    .mobile-show {
+      display: block;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .course-detail-payment {
+    .payment-1 {
+      margin: 0px 1rem;
+    }
+    .payment-2 {
+      margin: 0px 1rem;
+    }
+    .payment-3 {
+      margin: 0px 1rem;
+    }
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+  .review {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: block;
+    }
+    .mobile-show {
+      display: none;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .blog {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: block;
+    }
+    .mobile-show {
+      display: none;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .course-detail-payment {
+    .payment-1 {
+      margin: 0px 1rem;
+    }
+    .payment-2 {
+      margin: 0px 1rem;
+    }
+    .payment-3 {
+      margin: 0px 1rem;
+    }
+}
+}
+@media only screen and (min-width: 1441px) {
+  .coach {
+    .mobile-show {
+      display: none !important;
+    }
+  }
+  .review {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: block;
+    }
+    .mobile-show {
+      display: none !important;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .blog {
+    margin-top: 2em;
+    .text-title {
+      text-align: center;
+    }
+    .desktop-show {
+      display: block;
+    }
+    .mobile-show {
+      display: none;
+    }
+    .all-blog {
+      .text-edit {
+        font-size: 18px !important;
+      }
+    }
+  }
+  .course-detail-payment {
+    margin-right: 2rem !important;
+    .payment-1 {
+      margin: 0px 1rem !important;
+    }
+    .payment-2 {
+      margin: 0px 1rem !important;
+    }
+    .payment-3 {
+      margin: 0px 1rem !important;
+    }
+  }
+}
+
+// end fix for panupong (BANK)
+// therm use often
+.rounded {
+  &-xl {
+    border-radius: 0.5em;
+  }
+}
+.rounded-lg-top{
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-nodrop {
+  cursor: no-drop !important;
+}
+
+h5,
+.h5 {
+  @include media-breakpoint-down(lg) {
+    font-size: rfs-fluid-value(1.125em);
+  }
+}
+.single-product-page,
+.about-page {
+  .menu-wrapper {
+    display: none;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .single-product-page,
+  .about-page {
+    .menu-wrapper {
+      display: block;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .bg-secondary {
+    background-color: #FFF !important;
+  }
+}
+
+.divider {
+  width: 100%;
+  position: relative;
+  height: 5vw;
+  pointer-events: none;
+  -webkit-mask-image: url("data:image/svg+xml;utf8,%3csvg viewBox='0 0 100 100' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3e%3cpath d='M0,0 C16.6666667,66 33.3333333,98 50,98 C66.6666667,98 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z' fill='%23fff'/%3e%3c/svg%3e");
+  mask-image: url("data:image/svg+xml;utf8,%3csvg viewBox='0 0 100 100' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3e%3cpath d='M0,0 C16.6666667,66 33.3333333,98 50,98 C66.6666667,98 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z' fill='%23fff'/%3e%3c/svg%3e");
+  -webkit-mask-size: 100% 101%;
+  mask-size: 100% 101%;
+  background: white;
+
+  &.divider-side {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 5vw;
+    max-width: 72px;
+    -webkit-mask-image: url("data:image/svg+xml;utf8,%3csvg viewBox='0 0 100 100' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3e%3cpath d='M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z' fill='%23fff' fill-rule='evenodd' transform='translate(50.000000, 50.000000) rotate(-90.000000) translate(-50.000000, -50.000000)' /%3e%3c/svg%3e");
+    mask-image: url("data:image/svg+xml;utf8,%3csvg viewBox='0 0 100 100' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3e%3cpath d='M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z' fill='%23fff' fill-rule='evenodd' transform='translate(50.000000, 50.000000) rotate(-90.000000) translate(-50.000000, -50.000000)' /%3e%3c/svg%3e");
+    &:first-child {
+      left: -1px;
+    }
+    &:last-child {
+      right: 0px;
+    }
+  }
+  &.divider-bottom {
+    top: 1px;
+  }
+  &.divider-top {
+    bottom: 1px;
+  }
+}
+
+section > .divider-bottom {
+  margin-top: calc(3.75em - 5vw);
+}
+
+section > .divider-top {
+  margin-bottom: calc(3.75em - 5vw);
+}
+
+.main-banner{
+  margin-top: -3em;
+}
+.main-banner .container {
+  padding: 120px 15px;
+}
+
+.main-banner .container .banner-content h1 {
+  /*font-family: "Conv_Roboto-Bold";*/
+  font-size: 56px;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+
+.main-banner .container .banner-content h2 {
+  /*font-family: "Conv_Roboto-Bold";*/
+  font-size: 46px;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+
+.main-banner .container .banner-content p {
+  font-style: italic;
+  /*font-family: "Conv_Roboto-Regular";*/
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-banner .container .banner-content p.style-normal {
+  font-style: normal;
+}
+
+.main-banner .container .banner-content .group-btn {
+  position: relative;
+  margin: 0 0 0 0 !important;
+}
+
+.main-banner .container .banner-content .group-btn .btn-primary {
+  /*font-family: "Conv_Roboto-Medium";*/
+  font-weight: normal;
+  color: #fff;
+  font-size: 18px;
+  background-color: #b6333a;
+  border-color: #b6333a;
+  margin: 0 5px;
+  letter-spacing: 1px;
+}
+
+.main-banner .container .banner-content .group-btn .btn-outline-light {
+  /*font-family: "Conv_Roboto-Medium";*/
+  font-weight: normal;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 5px;
+  border-color: #fff;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 290px) and (max-width: 767px) {
+  .main-banner .container .banner-content h1 {
+    font-size: 34px;
+  }
+  .main-banner .container .banner-content h2 {
+    font-size: 28px;
+  }
+  .main-banner .container .banner-content p {
+    font-size: 12px;
+  }
+  .main-banner .container .banner-content .group-btn {
+    width: 100%;
+    max-width: 300px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto !important;
+  }
+  .main-banner .container .banner-content .group-btn .btn-primary {
+    width: 60%;
+    font-size: 14px;
+    padding: 0.625em 0.5em;
+    margin: 5px;
+  }
+  .main-banner .container .banner-content .group-btn .btn-outline-light {
+    width: 40%;
+    font-size: 14px;
+    padding: 0.625em 0.5em;
+    margin: 5px;
+  }
+}
+
+
+// support
+.main-support {
+  background-color: #b6333a !important;
+  // max-height: 415px;
+  overflow: hidden;
+  section {
+    display: flex;
+    align-items: center;
+    background: #b6333a;
+    height: 100%;
+    padding: 0;
+  }
+  .bg-primary {
+    background-color: #b6333a !important;
+  }
+  h3 {
+    /*font-family: $font-noto-se-bd;*/
+    font-size: 44px;
+    /*padding-left: 45px;*/
+    color: #fff;
+    margin: 0 0 10px 0;
+  }
+  p {
+    /*font-family: $font-noto-reg;*/
+    /*padding-left: 45px;*/
+    font-size: 16px;
+    margin: 0 0 35px 0;
+    font-style: italic;
+    color: #fff;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+      height: 100%;
+      padding: 0;
+    }
+    h3 {
+      font-size: 34px;
+      /*padding-left: 25px;*/
+      margin: 25px 0 30px 0;
+    }
+    p {
+      /*padding-left: 25px;*/
+      font-size: 16px;
+    }
+  }
+  @media only screen and (min-width: 290px) and (max-width: 767px) {
+    section {
+      height: 100%;
+      padding: 0;
+    }
+    h3 {
+      font-size: 28px;
+      /*padding-left: 0;*/
+      margin: 20px 0 15px 0;
+    }
+    p {
+      /*padding-left: 0px;*/
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+// support
+
+//branding
+.main-branding {
+  padding: 60px 0 45px 0 !important;
+  .section-title {
+    margin: 0 0 0 0;
+    h3 {
+      /*font-family: $font-noto-bd;*/
+      font-size: 42px;
+      color: #2e3032;
+      margin: 0 0 30px 0;
+    }
+    p {
+      /*font-family: $font-noto-reg;*/
+      font-size: 16px;
+      color: #2e3032;
+      margin: 0 0 45px 0;
+    }
+  }
+  .group-branding {
+    margin-left: -30px;
+    margin-right: -30px;
+    .col-branding {
+      width: 20%;
+      padding: 0 30px 0 30px;
+      margin: 15px 0;
+      img {
+        min-width: 100%;
+        max-width: 100%;
+        transform: scale(1);
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-title {
+      margin: 0 0 0 0;
+      h3 {
+        font-size: 34px;
+        margin: 0 0 30px 0;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 0 45px 0;
+      }
+    }
+    .group-branding {
+      margin-left: -15px;
+      margin-right: -15px;
+      .col-branding {
+        width: 33.33%;
+        padding: 0 15px;
+        margin: 0 0 0 0;
+        img {
+          min-width: 100%;
+          max-width: 100%;
+          transform: scale(1);
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 290px) and (max-width: 767px) {
+    padding: 80px 0 60px 0 !important;
+    .section-title {
+      margin: 0 0 0 0;
+      h3 {
+        font-size: 28px;
+        margin: 0 0 30px 0;
+      }
+      p {
+        font-size: 16px;
+        margin: 0 0 45px 0;
+      }
+    }
+    .group-branding {
+      margin-left: -15px;
+      margin-right: -15px;
+      .col-branding {
+        width: 30%;
+        padding: 0 10px;
+        margin: 0 0 0 0;
+      }
+    }
+  }
+}
+//branding
+
+.ant-menu {
+	font-size: 18px !important;
+	font-family: prompt;
+}
+
+#first-section h1 {
+  margin-bottom:0  !important;
+  margin-top:1em  !important;
+}
+.ant-btn-circle   {
+  border:none !important;
+}
+.ant-btn-circle i {
+  font-size:1.5em  !important;
+}
+footer {
+  padding: 30px 0 15px 0;
+}
+footer a:hover {
+color:#b6333a  !important;
+}
+footer .container > .container {
+  padding: 0;
+}
+footer .ant-btn-circle i {
+  font-size:1.2em  !important;
+  color: #444  !important;
+}
+
+.mian-banner .text-banner {
+  font-size:3.5em   !important;
+}
+.mian-banner .text-white {
+font-family: prompt;
+font-weight: normal;
+}
+.mian-banner section::before {
+	content: "";
+	position: absolute; 
+	display: block; 
+	border-radius: 0 0 50% 50%;
+  width: 300%;
+	height: 300%; 
+	bottom: -80px;
+	border: 100px solid #fff;
+	left: -100%;
+}
+.mian-banner .bg {
+  position: relative;
+	background-image: url(/recruith/_nuxt/assets/images/new_design/landing/bg_header.jpg)  ;
+  height:calc(88vh + 50px) !important;
+  overflow: hidden; 
+} 
+.main-internships   .internships-tag   {
+	font-family: prompt  !important;
+}
+.ant-card-bordered {
+  border:none !important;
+}
+.shadow-sm.ant-card-bordered {
+  box-shadow: 0 0.125em 0.45em rgba(0, 0, 0, 0.2) !important;
+ }
+
+ .ant-card-meta-title .mt-3 {
+	margin-top: 0 !important; 
+}
+
+.ant-card-meta-title h5  {
+	margin-top: 0 !important; 
+  font-size: 1em;
+}
+ 
+.ant-input {
+  height:40px  !important; 
+}
+
+.color-service { 
+	font-size: 1em !important; 
+}
+.color-service > .color-service { 
+  margin-top:0 !important; 
+   margin-bottom:0.5em !important; 
+}
+/*
+ Job Detail
+*/
+.bg-company section {
+  margin-top:10em !important;
+}
+.bg-company section  .translate-middle {
+	transform: translateX(0%) translateY(-50%) !important;
+}
+.bg-company section  .card {
+  width:100%;
+} 
+.bg-company section .col-8 {
+   display:none  !important;
+}
+.bg-company section .col-8 + .col-4 {
+  width: 100% !important; 
+}
+.bg-company section .card {
+  width:100% !important; 
+}
+section hr {
+  color:#e3e3e3 !important; 
+}
+
+.padding-left-0{
+  padding-left: 0px !important;
+}
+.text-title{
+  // font-weight: 600;
+  font-size: 3.75em;
+  @media screen and (max-width: 768px), (max-height: 500px) {
+    font-size: 3em;
+  }
+}
+.text-sub-title{
+  font-size: 24px;
+  @media screen and (max-width: 768px), (max-height: 500px) {
+    font-size: 20px;
+  }
+}
+.text-content{
+  font-size: 18px;
+  font-weight: 300;
+}
+/*
+h6.text-space {
+  font-size: 1.5em !important; 
+}
+ 
+Recruiter 
+.ant-card {
+  padding:2em !important; 
+}
+*/
+
+@media screen and (max-width: 700px), (max-height: 500px) {
+  .fb_dialog_content > iframe {
+    display: none !important;
+    bottom: 70px !important;
+  }
+  .fb_mpn_mobile_landing_page_slide_up  > iframe {
+    bottom: 70px !important;
+  }
+  .fb_iframe_widget iframe {
+    display: none  !important;
+  }
+  .cookieControl {
+    position: relative;
+    z-index: 3147483646 !important;
+}
+}
+//coach-course-desktop
+.padding-card{
+  padding-left: 16em;
+  padding-right: 16em;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+.padding-card{
+  padding-left: 10em;
+  padding-right: 10em;
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.padding-card{
+  padding-left: 4em;
+  padding-right: 4em;
+}
+}
+//end coach-course-desktop
+.scroll {
+  flex-wrap: nowrap;
+  white-space: nowrap !important;
+  overflow-x: scroll !important;
+}
+.payment-font {
+  h5 {
+    font-size: 1.4rem ;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+}
+
+// courses_detail
+section hr {
+  color: #e3e3e3 !important;
+}
+// courses_detail
